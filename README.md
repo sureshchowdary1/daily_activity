@@ -1,0 +1,1 @@
+[text](daily_activities/.gitignore)
