@@ -29,6 +29,11 @@ app.post('/api/data', (req, res) => {
     });
 });
 
+// Keep Alive dont remove helps to wake the Render all the time for every 14minutes by using the "http://console.cron-job.org" 
+app.get('/api/ping', (req, res) => {
+  res.status(200).send('Keep-Alive');
+});
+
 // Server Listener
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
