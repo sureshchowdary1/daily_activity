@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: '/api' // This matches your proxy.conf.json
+  apiUrl: 'https://api-backend-daily-activity.onrender.com/api' // This matches your proxy.conf.json
 };
