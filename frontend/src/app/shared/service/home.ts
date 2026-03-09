@@ -12,6 +12,8 @@ export class Home {
   constructor(private http: HttpClient) { }
 
   getUsers() {
+    console.log("testing", this.API_URL);
+    
     return this.http.get( `${this.API_URL}/api/hello`);
   }
 }
