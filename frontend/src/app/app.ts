@@ -10,7 +10,7 @@ import { Home } from './shared/service/home';
 })
 export class App {
   protected readonly title = signal('frontend');
-  Message = "NOT LOADED"
+  Message = "NOT LOADED DATA"
   constructor(private homeService: Home, private cd: ChangeDetectorRef){
     homeService.getUsers().subscribe({
       next:(res:any)=>{
